@@ -5,7 +5,7 @@
 # if you use it in your paper, I would appreciate if you could cite the repository
 #
 library(bio3d)
-#  non-interactive
+
 cat("coordinates pdb file: \n");
 filecoord <- readLines("stdin",n=1);
 cat("trajectory dcd file: \n");
