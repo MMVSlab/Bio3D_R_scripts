@@ -19,4 +19,8 @@ Requisites:
 Usage: Rscript PCA_analysis.R (and you will be asked the pdb, the dcd names and a prefix for output files)
 
 The script will generate csv files importable into excel of:
-1) 
+1) The projection of protein motion onto the first three principal components (output_PCA{1,2,3}.csv)
+2) The contribution of each residue to each of the first principal components (output_PC{1,2,3}_au_resposition.csv)
+3) The trajectory of the first three principal components (pdb files)
+4) The eigenvalues of each eigenvector in Angstrom^2 (output_eigenvalues.csv)
+5) The TRACE value in Angstrom^2 (printed on screen, 'cause it's just the sum of eigenvalues)
