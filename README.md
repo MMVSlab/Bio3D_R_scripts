@@ -28,3 +28,18 @@ The script will generate csv files importable into excel of:
 3) The trajectory of the first three principal components (pdb files)
 4) The eigenvalues of each eigenvector in Angstrom^2 (output_eigenvalues.csv)
 5) The TRACE value in Angstrom^2 (printed on screen, 'cause it's just the sum of eigenvalues)
+
+SCRIPT: RMSIP.R
+
+Briefly it calculates the overlap between the conformational space described by the first 10 eigenvectors.
+It is commoly used to measure the similarity between conformational spaces explored by the first ten principal 
+components of two different parts of a trajectory (es. PROTEINS: Structure, Function, and Genetics 36:419–424 (1999)).
+RMSIP is also used to compare the conformational space of two different simulations 
+of the same protein in different conditions (doi:10.1371/journal.pone.0121114) (but is not (yet) the case of this script).
+
+All you have to do is provide a pdb, a dcd. Once you have given the number of the starting, intermediate and last frames,
+the script divides the whole trajectory into two parts
+part 1: starting frame -> intermediate frame
+part 2: intermediate frame -> last frame
+and compare the best 10 principal components of these two parts. The output is the Root Mean Square Inner Product, which goes from 0 to 1
+and the more is near to 1 the more the two parts are identical.
