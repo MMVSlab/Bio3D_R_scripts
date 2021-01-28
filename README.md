@@ -31,7 +31,7 @@ The script will generate csv files importable into excel of:
 
 SCRIPT: RMSIP.R
 
-Briefly it calculates the overlap between the conformational space described by the first 10 eigenvectors.
+Briefly it calculates the overlap between the conformational space described by the first 10 eigenvectors of two simulations.
 It is commoly used to measure the similarity between conformational spaces explored by the first ten principal 
 components of two different parts of a trajectory (es. PROTEINS: Structure, Function, and Genetics 36:419–424 (1999)).
 RMSIP is also used to compare the conformational space of two different simulations 
