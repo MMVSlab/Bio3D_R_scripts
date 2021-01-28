@@ -3,11 +3,11 @@
 SCRIPT: PCA_analysis.R (by Davide Pirolli)
 
 This script performs an automated PCA of your molecular dynamics simulation, employing the bio3d library, 
-as described in the GrantLab website (http://thegrantlab.org/bio3d).
+as described in the GrantLab website (http://thegrantlab.org/bio3d), and provides data in excel readable .csv format.
 I found this implementation of bio3d very useful when working with Desmond-generated trajectories 
 (that I convert in pdb/dcd by vmd, that is fast for managing with trajectories).
 
-On Centos7 I had some prerequisites:
+On Centos7 I had to install some packages:
   1) libxml-devel
   2) openssl-devel
   3) motif-devel
